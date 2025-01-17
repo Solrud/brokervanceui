@@ -1,0 +1,13 @@
+.button-outline-my{
+  border: 1px var(--primary-color) solid;
+  border-radius: 0;
+  color: var(--primary-color);
+  font-size: 12px;
+  background-color: #ffffff;
+  min-width: 100px;
+  height: 30px;
+}
+
+p{
+  margin: 0 !important;
+}

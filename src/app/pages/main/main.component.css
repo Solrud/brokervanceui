@@ -1,0 +1,24 @@
+.section-1{
+  min-height: 200px;
+}
+
+.container-for-checks{
+  width: 400px;
+}
+
+.half-container{
+  display: flex;
+  flex-direction: column;;
+  height: 100%;
+  background: var(--third-color);
+  width: calc(var(--container-width)/2);
+  padding: 70px 0;
+}
+
+.bg-for-select-1-img{
+  background-color: var(--main-color);
+  background-image: url("src/assets/imgs/broker-vance-preview.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

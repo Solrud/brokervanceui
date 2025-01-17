@@ -1,0 +1,21 @@
+.bg-for-form{
+  background: var(--light-gray);
+  background: linear-gradient(180deg, var(--light-gray) 53%, var(--main-color) 53%);
+}
+.form{
+  min-height: 400px;
+  background-color: #c39251;
+  padding: 50px 70px;
+}
+.pic{
+  min-height: 400px;
+  background-color: var(--main-color);
+  background-image: url("src/assets/imgs/broker-vance-preview.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textarea-my{
+  transition: all .3s;
+}
