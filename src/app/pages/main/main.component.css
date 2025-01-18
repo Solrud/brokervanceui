@@ -1,9 +1,66 @@
 .section-1{
   min-height: 200px;
 }
+.section-3{
+  background: var(--white-permanent-color);
+  background: linear-gradient(0deg, var(--white-permanent-color) 53%, var(--main-color) 53%);
+}
 
+.container-section-3{
+  height: 320px;
+}
+
+.bg-for-section-1-img{
+  background-color: var(--main-color);
+  background-image: url("src/assets/imgs/broker-vance-preview.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-for-text-section-3{
+  width: 70%;
+}
 .container-for-checks{
   width: 400px;
+}
+
+.container-for-section-4-component{
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+}
+
+.div-section-4-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.div-section-4-img{
+  background-color: var(--main-color);
+  background-image: url("src/assets/imgs/broker-vance-preview.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-box-shadow: -13px 13px 0px 0px var(--primary-color);
+  -moz-box-shadow: -13px 13px 0px 0px var(--primary-color);
+  box-shadow: -13px 13px 0px 0px var(--primary-color);
+
+}
+
+.b-s-eb{
+  -webkit-box-shadow: 13px 13px 0px 0px var(--primary-color);
+  -moz-box-shadow: 13px 13px 0px 0px var(--primary-color);
+  box-shadow: 13px 13px 0px 0px var(--primary-color);
+}
+
+.devider-line-section-4{
+  height: 1px;
+  width: 50px;
+  background: var(--primary-color);
 }
 
 .half-container{
@@ -15,7 +72,7 @@
   padding: 70px 0;
 }
 
-.bg-for-select-1-img{
+.bg-for-section-1-img{
   background-color: var(--main-color);
   background-image: url("src/assets/imgs/broker-vance-preview.jpg");
   background-position: center center;

@@ -1,7 +1,7 @@
 <section class="d-flex section-1">
   <div class="d-flex col-6 justify-content-end bg-third-my">
     <div class="half-container">
-      <h1 class="fw-bold">Стремимся к быстрому получению одобрений</h1>
+      <h1 class="fw-bold mb-4">Стремимся к быстрому получению одобрений</h1>
       <div class="container-for-checks">
         <p><i class="bi bi-check2-square"></i> Мы самые честные и не обманем</p>
         <p><i class="bi bi-check2-square"></i> Одобрение возможно в течение 24 часов, а погашение - в течение 3 рабочих дней</p>
@@ -14,18 +14,80 @@
       </div>
     </div>
   </div>
-  <div class="col-6 bg-for-select-1-img"></div>
+  <div class="col-6 bg-for-section-1-img"></div>
 </section>
 
-<section class="w-100">
-  <div class="container">
+<section class="w-100 bg-main-my">
+  <div class="container py-5 text-center">
+    <h1 class="text-white fw-bold mb-3">Мы обеспечиваем быстрое согласование и финансовые решения для ваших клиентов</h1>
+    <p class="text-white mb-4">Заполнив эту форму, мы предлагаем скидку на оплату за открытие счета и предоставляем брокерские бонусы при окончательном расчете.</p>
+    <button class="btn b-r-0 text-white bg-primary-my mb-4">Заполнить анкету</button>
+  </div>
+</section>
 
+<section class="w-100 section-3">
+  <div class="d-flex container container-section-3">
+    <div class="col-6 bg-for-section-1-img"></div>
+    <div class="col-6 bg-primary-my d-flex justify-content-center align-items-center">
+      <div class="container-for-text-section-3">
+        <span class="text-white fs-5 fw-bold">Мы стремимся предоставлять заемщикам, брокерам и кредиторам услуги высочайшего качества и оптимизировать взаимодействие с бизнесом.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w-100 section-4">
+  <div class="container py-5">
+    <h2 class="fw-bold mb-5">Обеспечение максимальной производительности и неизменной надежности</h2>
+    <div class="d-flex flex-column gap-5">
+      <div class="d-flex container-for-section-4-component mb-4">
+        <div class="col-6 div-section-4-img"></div>
+        <div class="col-6 div-section-4-text">
+          <div class="px-5 d-flex flex-column">
+            <h3 class="fw-bold">Заемщикам</h3>
+            <div class="devider-line-section-4 mb-3"></div>
+            <span class="mb-3">Broker Vance является лидером отрасли в предоставлении краткосрочного финансирования по первой и второй ипотеке клиентам, которым требуются оперативные расчеты и гибкость.</span>
+            <div>
+              <button class="btn button-outline-my">Узнать больше</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex container-for-section-4-component mb-4">
+        <div class="col-6 div-section-4-text">
+          <div class="px-5 d-flex flex-column">
+            <h3 class="fw-bold">Брокерам</h3>
+            <div class="devider-line-section-4 mb-3"></div>
+            <span class="mb-3">Broker Vance является лидером отрасли в предоставлении краткосрочного финансирования по первой и второй ипотеке клиентам, которым требуются оперативные расчеты и гибкость.</span>
+            <div>
+              <button class="btn button-outline-my">Узнать больше</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 div-section-4-img b-s-eb"></div>
+      </div>
+      <div class="d-flex container-for-section-4-component mb-4">
+        <div class="col-6 div-section-4-img"></div>
+        <div class="col-6 div-section-4-text">
+          <div class="px-5 d-flex flex-column">
+            <h3 class="fw-bold">Инвесторам</h3>
+            <div class="devider-line-section-4 mb-3"></div>
+            <span class="mb-3">Broker Vance является лидером отрасли в предоставлении краткосрочного финансирования по первой и второй ипотеке клиентам, которым требуются оперативные расчеты и гибкость.</span>
+            <div>
+              <button class="btn button-outline-my">Узнать больше</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
+
 <section class="w-100">
     <app-accordion-of-questions></app-accordion-of-questions>
 </section>
+
 <section class="w-100">
     <app-contact-form [isFormForMainPage]="true"></app-contact-form>
 </section>

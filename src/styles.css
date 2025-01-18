@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
-@import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spacing: normal; font-size: 14px}
 
@@ -75,4 +75,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spa
   color: var(--bs-accordion-active-color);
   background-color: var(--white-permanent-color);
   box-shadow: inset 0 calc(-1* var(--white-permanent-color)) 0 var(--white-permanent-color);
+}
+
+.button-outline-my{
+  border: 1px var(--primary-color) solid;
+  border-radius: 0;
+  color: var(--primary-color);
+  font-size: 12px;
+  background-color: #ffffff;
+  min-width: 100px;
+  height: 30px;
 }
