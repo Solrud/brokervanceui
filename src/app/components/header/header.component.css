@@ -1,3 +1,17 @@
 p{
   margin: 0 !important;
 }
+
+.button-menu{
+  display: none;
+  padding: 0 5px;
+}
+
+@media (max-width: 1100px){
+  .menu-list{
+    display: none !important;
+  }
+  .button-menu{
+    display: block;
+  }
+}

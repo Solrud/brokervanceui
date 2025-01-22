@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NgbActiveOffcanvas} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-offcanvas-content',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./offcanvas-content.component.css']
 })
 export class OffcanvasContentComponent {
-
+  constructor(public activeOffcanvas: NgbActiveOffcanvas) {
+  }
 }

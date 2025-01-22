@@ -1,15 +1,8 @@
-/*:host{*/
-/*  display: flex;*/
-/*  height: 100%;*/
-/*  width: 100%;*/
-/*  flex-direction: column;*/
-/*}*/
-
 .header-conf{
   display: flex;
   flex-direction: row;
   background: var(--white-permanent-color);
-  height: 50px;
+  /*height: 350px;*/
   padding: 10px 10px;
 }
 

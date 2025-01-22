@@ -9,6 +9,8 @@ import { OffcanvasContentComponent } from './components/offcanvas-content/offcan
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { AccordionOfQuestionsComponent } from './components/accordion-of-questions/accordion-of-questions.component';
 import {NgbAccordionModule} from "@ng-bootstrap/ng-bootstrap";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { IntersectionObserverDirective } from './shared/intersection-observer.directive';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import {NgbAccordionModule} from "@ng-bootstrap/ng-bootstrap";
     MainComponent,
     OffcanvasContentComponent,
     ContactFormComponent,
-    AccordionOfQuestionsComponent
+    AccordionOfQuestionsComponent,
+    IntersectionObserverDirective,
   ],
   imports: [
     BrowserModule,
-    NgbAccordionModule
+    NgbAccordionModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

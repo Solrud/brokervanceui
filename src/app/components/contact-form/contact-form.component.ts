@@ -8,9 +8,4 @@ import {Component, Input} from '@angular/core';
 export class ContactFormComponent {
   @Input()
   isFormForMainPage: boolean = true;
-
-
-
-
-
 }

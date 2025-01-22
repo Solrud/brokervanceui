@@ -1,4 +1,12 @@
-.bg-accorgion-of-questions{
-  padding: 70px 0 70px 0;
-  background: var(--light-gray);
+
+.container-accordion{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 760px){
+  .container-accordion{
+    padding: 0 1.5rem;
+  }
 }

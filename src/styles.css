@@ -3,7 +3,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spacing: normal; font-size: 14px}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   letter-spacing: normal; font-size: 14px}
 
 
 
@@ -11,7 +11,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spa
   --container-width: 1050px;
 
   --main-color: #0e142a;
-  --primary-color: #c39251;
+  /*--primary-color: #c39251;*/
+  --primary-color: #AF7A41;
   --third-color: #f1e4d6;
   --white-color: #fff;
   --white-permanent-color: #fff;
@@ -22,7 +23,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spa
 
 [data-theme='dark']{
   --main-color: #0e142a;
-  --primary-color: #c39251;
+  --primary-color: #AF7A41;
   --third-color: #f1e4d6;
   --white-color: #000000;
   --white-permanent-color: #fff;
@@ -47,12 +48,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spa
   color: var(--primary-color);
 }
 
-
 .pointer{
   cursor: pointer;
 }
 
-.container{
+.container-my{
   width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
@@ -66,6 +66,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spa
   border-radius: 0 !important;
 }
 
+/*ACCORDION*/
 .accordion-button:focus {
   z-index: 3;
   outline: 0;
@@ -77,6 +78,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spa
   box-shadow: inset 0 calc(-1* var(--white-permanent-color)) 0 var(--white-permanent-color);
 }
 
+
+
+/*MY BUTTONS*/
 .button-outline-my{
   border: 1px var(--primary-color) solid;
   border-radius: 0;
@@ -85,4 +89,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  letter-spa
   background-color: #ffffff;
   min-width: 100px;
   height: 30px;
+}
+
+
+/*OFF CANVAS*/
+.offcanvas-backdrop.show{
+  opacity: 1 !important;
+}
+@media (max-width: 760px){
+  .off-canvas{
+    width:100vw!important;
+  }
 }

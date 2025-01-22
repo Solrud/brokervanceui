@@ -14,6 +14,11 @@ export class HeaderComponent {
 
 
   onClickOpenOffcanvas(): void{
-    this.canvasService.open(OffcanvasContentComponent, {position: 'end'});
+    this.canvasService.open(OffcanvasContentComponent,
+      {
+        position: 'end',
+        backdropClass: "bg-primary-my",
+        panelClass: "off-canvas"
+      });
   }
 }

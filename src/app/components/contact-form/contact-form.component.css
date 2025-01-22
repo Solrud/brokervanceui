@@ -19,3 +19,17 @@
 .textarea-my{
   transition: all .3s;
 }
+
+.mb-my{
+  margin-bottom: -1px;
+}
+
+@media (max-width: 1050px){
+  .pic{
+    display: none;
+  }
+  .form{
+    width: 100% !important;
+    padding: 30px 2rem;
+  }
+}
