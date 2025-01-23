@@ -1,9 +1,8 @@
 .header-conf{
   display: flex;
   flex-direction: row;
-  background: var(--white-permanent-color);
+  background: var(--main-color);
   /*height: 350px;*/
-  padding: 10px 10px;
 }
 
 .body-conf{

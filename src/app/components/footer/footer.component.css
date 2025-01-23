@@ -37,7 +37,30 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+.svgs-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-svg{
+  background-image: url('src/assets/imgs/brokervance logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:  60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.label-text-svg{
+  background-image: url('src/assets/imgs/brokervance label and txt.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:  190px;
+  height: 45px;
+}
 @media (max-width: 1100px){
+  .svgs-container{
+    margin-bottom: 1rem;
+  }
   .container-footer{
     padding: 0 2rem;
   }
