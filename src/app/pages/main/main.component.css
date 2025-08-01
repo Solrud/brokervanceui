@@ -20,7 +20,7 @@
 }
 .bg-for-section-1-img{
   background-color: var(--main-color);
-  background-image: url("src/assets/imgs/broker-vance-preview.jpg");
+  background-image: url("src/assets/imgs/photos-preview/man_woman_table.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,7 @@
   }
   .bg-for-section-1-img{
     width: 100%;
-    height: 600px;
+    height: 400px;
   }
 }
 /* SECTION 1 WELCOME TEXT AND BIG PICTURE */
@@ -122,7 +122,7 @@
 }
 .bg-for-section-img{
   background-color: var(--main-color);
-  background-image: url("src/assets/imgs/broker-vance-preview.jpg");
+  background-image: url("src/assets/imgs/photos-preview/house_modern1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,6 +140,9 @@
 }
 
 @media (max-width: 600px) {
+  .s-3-label{
+    font-size: 16px !important;
+  }
   .container-section-3{
     flex-direction: column;
   }
@@ -148,7 +151,7 @@
     flex-basis: 300px;
   }
   .outer-container-for-text-section-3{
-    flex-basis: 300px;
+    flex-basis: 200px;
   }
 }
 /* SECTION 3 HALF PICTURE AND GOAL */
@@ -183,7 +186,6 @@
 
 .div-section-4-img{
   background-color: var(--main-color);
-  background-image: url("src/assets/imgs/broker-vance-preview.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,6 +193,17 @@
   flex: 0 0 auto;
   width: 50%;
 }
+
+.s-4-img-1{
+  background-image: url("src/assets/imgs/photos-preview/borrowers.jpg");
+}
+.s-4-img-2{
+  background-image: url("src/assets/imgs/photos-preview/people_office.jpg");
+}
+.s-4-img-3{
+  background-image: url("src/assets/imgs/photos-preview/man_woman_table1.jpg");
+}
+
 .b-s-eb{
   -webkit-box-shadow: 12px 10px 0px 0px var(--primary-color);
   -moz-box-shadow: 12px 10px 0px 0px var(--primary-color);
@@ -307,7 +320,17 @@
 /*                  END                  */
 /*______________________________________ */
 
+.container-accordion{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+@media (max-width: 760px){
+  .container-accordion{
+    padding: 0 1.5rem;
+  }
+}
 .bg-accordion-of-questions{
   padding: 70px 0 70px 0;
   background: var(--light-gray);

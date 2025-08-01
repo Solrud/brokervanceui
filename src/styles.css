@@ -90,9 +90,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   letter-sp
   min-width: 100px;
   height: 30px;
 }
+.button-outline-my:hover{
+  transition: 0.5s;
+  background-color: var(--primary-color) !important;
+  color: var(--white-permanent-color) !important;
+}
+.button-my_large{
+  border-radius: 0;
+  background-color: var(--primary-color) !important;
+  color: var(--white-permanent-color) !important;
+  font-size: 16px;
+  min-width: 100px;
+  height: 40px;
+}
+.button-my_large:hover{
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: var(--primary-color) !important;
+  border: 1px var(--primary-color) solid;
+}
 
-
-/*OFF CANVAS*/
+/*OFF-CANVAS*/
 .offcanvas-backdrop.show{
   opacity: 1 !important;
 }
@@ -100,4 +118,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   letter-sp
   .off-canvas{
     width:100vw!important;
   }
+}
+
+::ng-deep .bg-modal{
+  background-color: #8f5e25 !important;
 }

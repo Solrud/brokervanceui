@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import {IIntersection, IntersectionService} from "../../shared/intersection-fade/intersection.service";
 
 @Component({
   selector: 'app-main',
@@ -9,20 +10,22 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     trigger('fadeIn', [
       state('invisible', style({ opacity: 0 })),
       state('visible', style({ opacity: 1 })),
-      transition('invisible => visible', animate('0.8s ease-in'))
+      transition('invisible => visible', animate('0.6s ease-in'))
     ])
   ]
 })
 export class MainComponent implements OnInit{
-  sectionsVisibleList: {id: number, visible: boolean}[] = [];
+  sectionsVisibleList: IIntersection[] = [];
+
+  constructor(private intersectionService: IntersectionService) {
+    this.sectionsVisibleList = this.intersectionService.sectionsVisibleList;
+  }
 
   ngOnInit()  {
-    for(let i = 0; i <= 20; i++){
-      this.sectionsVisibleList.push({id: i, visible: false})
-    }
+
   }
 
   onChangeSectionVisible(index: number, isVisible: boolean) {
-    this.sectionsVisibleList[index].visible = isVisible;
+    this.intersectionService.onChangeSectionVisible(index, isVisible);
   }
 }

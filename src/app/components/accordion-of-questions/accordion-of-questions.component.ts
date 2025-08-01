@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input, TemplateRef} from '@angular/core';
 
 @Component({
   selector: 'app-accordion-of-questions',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AccordionOfQuestionsComponent {
 
+  @Input()
+  question: string;
+
+  @Input()
+  answerString?: string;
+
+  @Input()
+  answerTemplateRef?: TemplateRef<unknown>;
 }

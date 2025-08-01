@@ -10,7 +10,9 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { AccordionOfQuestionsComponent } from './components/accordion-of-questions/accordion-of-questions.component';
 import {NgbAccordionModule} from "@ng-bootstrap/ng-bootstrap";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { IntersectionObserverDirective } from './shared/intersection-observer.directive';
+import { IntersectionObserverDirective } from './shared/intersection-fade/intersection-observer.directive';
+import {RouterLink} from "@angular/router";
+import { GreetingsModalComponent } from './modal/greetings/greetings-modal.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { IntersectionObserverDirective } from './shared/intersection-observer.di
     ContactFormComponent,
     AccordionOfQuestionsComponent,
     IntersectionObserverDirective,
+    GreetingsModalComponent,
   ],
   imports: [
     BrowserModule,
     NgbAccordionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterLink
   ],
   providers: [],
   bootstrap: [AppComponent]

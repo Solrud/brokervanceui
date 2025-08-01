@@ -1,18 +1,18 @@
-<section class="section-1">
+<section class="section-1" id="main">
   <div class="text-half d-flex justify-content-end bg-third-my">
     <div class="half-container"
          appIntersectionObserver
          (visible)="onChangeSectionVisible(0, $event)"
          [@fadeIn]="sectionsVisibleList[0].visible ? 'visible' : 'invisible'">
-      <h1 class="fw-bold mb-4 main-label-s1">Стремимся к быстрому получению одобрений</h1>
+      <h1 class="fw-bold mb-4 main-label-s1">Brokervance — ваш надежный партнер в финансах, инвестициях и партнерских возможностях.</h1>
       <div class="container-for-checks-s1">
-        <p><i class="bi bi-check2-square"></i> Мы самые честные и не обманем</p>
         <p><i class="bi bi-check2-square"></i> Одобрение возможно в течение 24 часов, а погашение - в течение 3 рабочих дней</p>
+        <p><i class="bi bi-check2-square"></i> Мы самые честные и не обманем</p>
         <p><i class="bi bi-check2-square"></i> Займы на сумму до 8 миллионов долларов напрямую у кредиторов – без участия банков и их бюрократических проволочек</p>
         <p><i class="bi bi-check2-square"></i> Прозрачные контракты и затраты </p>
         <p><i class="bi bi-check2-square"></i> Срочные соглашения</p>
         <div>
-          <button class="btn b-r-0 bg-primary-my text-white">Связаться с нами</button>
+          <a type="button" class="btn button-my_large mt-2" href="https://mattheweb.ru/brokervance" target="_blank">Связаться с разработчиком сайта!</a>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
        [@fadeIn]="sectionsVisibleList[6].visible ? 'visible' : 'invisible'"></div>
 </section>
 
-<section class="section-2">
+<section class="section-2" id="label">
   <div class="container-my container-section-2"
        appIntersectionObserver
        (visible)="onChangeSectionVisible(1, $event)"
@@ -34,7 +34,7 @@
   </div>
 </section>
 
-<section class="section-3">
+<section class="section-3" id="main">
   <div class="container-my container-section-3">
     <div class="div-pic-section-3 bg-for-section-img"></div>
     <div class="outer-container-for-text-section-3">
@@ -42,7 +42,7 @@
            appIntersectionObserver
            (visible)="onChangeSectionVisible(2, $event)"
            [@fadeIn]="sectionsVisibleList[2].visible ? 'visible' : 'invisible'">
-        <span class="text-white fs-5 fw-bold">Мы стремимся предоставлять заемщикам, брокерам и кредиторам услуги высочайшего качества и оптимизировать взаимодействие с бизнесом.</span>
+        <span class="text-white fs-5 fw-bold s-3-label">Мы стремимся предоставлять заемщикам, брокерам и кредиторам услуги высочайшего качества и оптимизировать взаимодействие с бизнесом.</span>
       </div>
     </div>
   </div>
@@ -54,9 +54,9 @@
         appIntersectionObserver
         (visible)="onChangeSectionVisible(7, $event)"
         [@fadeIn]="sectionsVisibleList[7].visible ? 'visible' : 'invisible'">Обеспечение максимальной быстроты и неизменной надежности</h2>
-    <div class="d-flex flex-column gap-5">
-      <div class="container-for-section-4-component mb-4">
-        <div class="div-section-4-img b-s-sb"
+    <div class="d-flex flex-column gap-5" >
+      <div id="forBorrowers" class="container-for-section-4-component mb-4">
+        <div class="div-section-4-img s-4-img-1 b-s-sb"
              appIntersectionObserver
              (visible)="onChangeSectionVisible(3, $event)"
              [@fadeIn]="sectionsVisibleList[3].visible ? 'visible' : 'invisible'"></div>
@@ -67,15 +67,15 @@
           <div class="inner-div-s4-text">
             <h3 class="fw-bold">Заемщикам</h3>
             <div class="devider-line-section-4 mb-3"></div>
-            <span class="mb-3">Broker Vance является лидером отрасли в предоставлении краткосрочного финансирования по первой и второй ипотеке клиентам, которым требуются оперативные расчеты и гибкость.</span>
+            <span class="mb-3">Получите быстрый и прозрачный доступ к финансированию на выгодных условиях. Оценим заявку онлайн и поможем найти оптимальное решение под ваши задачи.</span>
             <div>
               <button class="btn button-outline-my">Узнать больше</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-for-section-4-component mb-4">
-        <div class="div-section-4-img b-s-eb order-2"
+      <div id="forBrokers" class="container-for-section-4-component mb-4">
+        <div class="div-section-4-img s-4-img-2 b-s-eb order-2"
              appIntersectionObserver
              (visible)="onChangeSectionVisible(9, $event)"
              [@fadeIn]="sectionsVisibleList[9].visible ? 'visible' : 'invisible'"></div>
@@ -86,15 +86,15 @@
           <div class="inner-div-s4-text">
             <h3 class="fw-bold">Брокерам</h3>
             <div class="devider-line-section-4 mb-3"></div>
-            <span class="mb-3">Broker Vance является лидером отрасли в предоставлении краткосрочного финансирования по первой и второй ипотеке клиентам, которым требуются оперативные расчеты и гибкость.</span>
+            <span class="mb-3">Поможем расширить возможности для ваших клиентов и увеличить доход. Надежное сервисное сопровождение и гибкие партнерские условия для вашего роста.</span>
             <div>
               <button class="btn button-outline-my">Узнать больше</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-for-section-4-component mb-4">
-        <div class="div-section-4-img b-s-sb"
+      <div id="forInvestors" class="container-for-section-4-component mb-4">
+        <div class="div-section-4-img s-4-img-3 b-s-sb"
              appIntersectionObserver
              (visible)="onChangeSectionVisible(11, $event)"
              [@fadeIn]="sectionsVisibleList[11].visible ? 'visible' : 'invisible'"></div>
@@ -105,7 +105,7 @@
           <div class="inner-div-s4-text">
             <h3 class="fw-bold">Инвесторам</h3>
             <div class="devider-line-section-4 mb-3"></div>
-            <span class="mb-3">Broker Vance является лидером отрасли в предоставлении краткосрочного финансирования по первой и второй ипотеке клиентам, которым требуются оперативные расчеты и гибкость.</span>
+            <span class="mb-3">Инвестируйте в перспективные проекты и получайте стабильный доход с минимальными рисками. Открытые условия и профессиональная экспертиза на каждом этапе сотрудничества.</span>
             <div>
               <button class="btn button-outline-my">Узнать больше</button>
             </div>
@@ -126,11 +126,11 @@
       <div class="container-card-section-5">
         <div class="card-section-5">
           <div class="section-5-test-pic">
-            <i class="bi bi-patch-check fs-1 color-primary-my"></i>
+            <i class="bi bi-person-check fs-1 color-primary-my"></i>
           </div>
           <div class="section-5-text">
-            <h3 class="fw-medium">Apply</h3>
-            <p>Either contact us directly or complete our information sheet for us to assess the funding options available to you</p>
+            <h3 class="fw-medium">Индивидуальный подход</h3>
+            <p>Учитываем ваши цели и подбираем оптимальные решения для каждого клиента.</p>
           </div>
         </div>
         <div class="card-section-5">
@@ -138,28 +138,28 @@
             <i class="bi bi-patch-check fs-1 color-primary-my"></i>
           </div>
           <div class="section-5-text">
-            <h3 class="fw-medium">Apply</h3>
-            <p>Either contact us directly or complete our information sheet for us to assess the funding options available to you</p>
+            <h3 class="fw-medium">Прозрачность</h3>
+            <p>Все условия и процессы работы полностью открыты и понятны с первого шага.</p>
           </div>
         </div>
       </div>
       <div class="container-card-section-5">
         <div class="card-section-5">
           <div class="section-5-test-pic">
-            <i class="bi bi-patch-check fs-1 color-primary-my"></i>
+            <i class="bi bi-fast-forward-btn fs-1 color-primary-my"></i>
           </div>
           <div class="section-5-text">
-            <h3 class="fw-medium">Apply</h3>
-            <p>Either contact us directly or complete our information sheet for us to assess the funding options available to you</p>
+            <h3 class="fw-medium">Оперативность</h3>
+            <p>Быстро реагируем на ваши запросы и принимаем решения в кратчайшие сроки.</p>
           </div>
         </div>
         <div class="card-section-5">
           <div class="section-5-test-pic">
-            <i class="bi bi-patch-check fs-1 color-primary-my"></i>
+            <i class="bi bi-buildings fs-1 color-primary-my"></i>
           </div>
           <div class="section-5-text">
-            <h3 class="fw-medium">Apply</h3>
-            <p>Either contact us directly or complete our information sheet for us to assess the funding options available to you</p>
+            <h3 class="fw-medium">Надежность</h3>
+            <p>Гарантируем профессиональное сопровождение и безопасность каждой сделки.</p>
           </div>
         </div>
       </div>
@@ -167,11 +167,29 @@
   </div>
 </section>
 
-<section class="w-100 bg-accordion-of-questions">
-    <app-accordion-of-questions
-      appIntersectionObserver
-      (visible)="onChangeSectionVisible(5, $event)"
-      [@fadeIn]="sectionsVisibleList[5].visible ? 'visible' : 'invisible'"></app-accordion-of-questions>
+<section class="w-100 bg-accordion-of-questions "
+         appIntersectionObserver
+         (visible)="onChangeSectionVisible(5, $event)"
+         [@fadeIn]="sectionsVisibleList[5].visible ? 'visible' : 'invisible'">
+  <div class="container-my container-accordion">
+    <h3 class="text-center fw-bold mb-3">Часто задаваемые вопросы</h3>
+    <ng-template #answer1>Сайт написан Frontend разработчиком Ильиным Матвеем. Сайт портфолио разработчика:
+      <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a>
+    </ng-template>
+    <app-accordion-of-questions [question]="'Кто сделал этот сайт?'" [answerTemplateRef]="answer1"></app-accordion-of-questions>
+    <ng-template #answer2>Telegram: <a href="https://t.me/rudalsmolyusr" target="_blank">@rudalsmolyusr</a>
+      Также на сайте разработчика есть все контакты, либо можно оставить свои: <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a></ng-template>
+    <app-accordion-of-questions [question]="'Как связаться с разработчиком этого сайта?'" [answerTemplateRef]="answer2"></app-accordion-of-questions>
+    <app-accordion-of-questions [question]="'На чем именно написан сайт?'"
+                                [answerString]="'Сайт написан с помощью фреймворка Angular v.16, на языке TypeScript, верстка на HTML, стили на CSS'"></app-accordion-of-questions>
+    <ng-template #answer4>Нет, этот сайт является демонстрационным лендингом, созданным в рамках портфолио разработчика.
+      Его функционал ограничен и не предназначен для коммерческого использования.</ng-template>
+    <app-accordion-of-questions [question]="'Работоспособен ли этот сайт?'" [answerTemplateRef]="answer4"></app-accordion-of-questions>
+    <ng-template #answer5>Конечно! Свяжитесь с разработчиком по ссылке
+      <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a>
+      — для вас будет создан современный и качественный сайт с учетом ваших пожеланий.</ng-template>
+    <app-accordion-of-questions [question]="'Могу ли я сделать свой собственный сайт?'" [answerTemplateRef]="answer5"></app-accordion-of-questions>
+  </div>
 </section>
 
 <section class="w-100">

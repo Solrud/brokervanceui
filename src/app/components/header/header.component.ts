@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {NgbOffcanvas} from "@ng-bootstrap/ng-bootstrap";
 import {OffcanvasContentComponent} from "../offcanvas-content/offcanvas-content.component";
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,8 @@ import {OffcanvasContentComponent} from "../offcanvas-content/offcanvas-content.
 })
 export class HeaderComponent {
 
-  constructor(private canvasService: NgbOffcanvas) {
+  constructor(private canvasService: NgbOffcanvas,
+              private scroller: ViewportScroller) {
   }
 
 
@@ -20,5 +22,9 @@ export class HeaderComponent {
         backdropClass: "bg-primary-my",
         panelClass: "off-canvas"
       });
+  }
+
+  scrollToSection(sectionID: string) {
+    this.scroller.scrollToAnchor(sectionID)
   }
 }

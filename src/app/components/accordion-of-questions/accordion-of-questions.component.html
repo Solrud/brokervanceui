@@ -1,51 +1,13 @@
-  <div class="container-my container-accordion">
-    <h3 class="text-center fw-bold mb-3">Часто задаваемые вопросы</h3>
-    <div ngbAccordion>
-      <div ngbAccordionItem class="b-r-0">
-        <h2 ngbAccordionHeader>
-          <button ngbAccordionButton>Can Vance Finance do multiple loans?</button>
-        </h2>
-        <div ngbAccordionCollapse>
-          <div ngbAccordionBody>
-            <ng-template>Content for the first item</ng-template>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div ngbAccordion>
-      <div ngbAccordionItem>
-        <h2 ngbAccordionHeader>
-          <button ngbAccordionButton>Can I use other assets to reduce my LVR?</button>
-        </h2>
-        <div ngbAccordionCollapse>
-          <div ngbAccordionBody>
-            <ng-template>Content for the first item</ng-template>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div ngbAccordion>
-      <div ngbAccordionItem>
-        <h2 ngbAccordionHeader>
-          <button ngbAccordionButton>What type of repayment terms are offered?</button>
-        </h2>
-        <div ngbAccordionCollapse>
-          <div ngbAccordionBody>
-            <ng-template>Content for the first item</ng-template>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div ngbAccordion>
-      <div ngbAccordionItem>
-        <h2 ngbAccordionHeader>
-          <button ngbAccordionButton>What type of repayment terms are offered?</button>
-        </h2>
-        <div ngbAccordionCollapse>
-          <div ngbAccordionBody>
-            <ng-template>What kind of fees can I expect?</ng-template>
-          </div>
-        </div>
+<div ngbAccordion>
+  <div ngbAccordionItem class="b-r-0">
+    <h2 ngbAccordionHeader>
+      <button ngbAccordionButton>{{question}}</button>
+    </h2>
+    <div ngbAccordionCollapse>
+      <div ngbAccordionBody>
+        <ng-container *ngIf="answerString">{{answerString}}</ng-container>
+        <ng-template *ngIf="answerTemplateRef" [ngTemplateOutlet]="answerTemplateRef"></ng-template>
       </div>
     </div>
   </div>
+</div>
