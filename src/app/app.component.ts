@@ -7,15 +7,6 @@ import {ModalOpenService} from "./shared/modal-open/modal-open.service";
   styleUrls: ['./app.component.css'],
   host: {class: 'd-flex h-100 w-100 flex-column bg-main-my'}
 })
-export class AppComponent implements OnInit{
-  constructor(private modal: ModalOpenService) {
-  }
+export class AppComponent{
 
-  ngOnInit() {
-    this.welcomeOpen();
-  }
-
-  welcomeOpen(){
-    this.modal.openGreetings();
-  }
 }

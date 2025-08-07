@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
-
-html, body { height: 100%; }
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   letter-spacing: normal; font-size: 14px}
 
+.font-old-standard {
+  font-family: "PT Serif Caption", serif;
+}
 
 
 :root{
@@ -45,7 +47,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   letter-sp
   color: var(--main-color);
 }
 .color-primary-my{
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
+}
+.bg-white-permanent{
+  background-color: var(--white-permanent-color);
+}
+.bg-light-grey{
+  background-color: var(--light-gray);
 }
 
 .pointer{

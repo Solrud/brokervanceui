@@ -1,12 +1,11 @@
 <i class="bi bi-x-lg x-my fs-4" (click)="activeOffcanvas.close()"></i>
 <div class="d-flex flex-column align-items-center p-container gap-4">
-<!--  <h1 class="color-primary-my fw-bold">BROKER VANCE</h1>-->
-  <div class="logo-svg"></div>
-  <div class="label-text-svg"></div>
+  <div class="logo-svg" [routerLink]="['']" (click)="activeOffcanvas.close()"></div>
+  <div class="label-text-svg" [routerLink]="['']" (click)="activeOffcanvas.close()"></div>
   <span>Заемщикам</span>
   <span>Брокерам</span>
   <span>Инвесторам</span>
-  <span>Контакты</span>
+  <span [routerLink]="['/contacts']" (click)="activeOffcanvas.close()">Контакты</span>
   <div>
     <button class="btn button-outline-my apply-btn fs-5 ">Связаться</button>
   </div>

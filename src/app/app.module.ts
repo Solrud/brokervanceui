@@ -11,8 +11,16 @@ import { AccordionOfQuestionsComponent } from './components/accordion-of-questio
 import {NgbAccordionModule} from "@ng-bootstrap/ng-bootstrap";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { IntersectionObserverDirective } from './shared/intersection-fade/intersection-observer.directive';
-import {RouterLink} from "@angular/router";
+import {RouterLink, RouterModule, RouterOutlet, Routes} from "@angular/router";
 import { GreetingsModalComponent } from './modal/greetings/greetings-modal.component';
+import { ContactComponent } from './pages/contact/contact.component';
+
+
+const routes: Routes = [
+  { path: '', component: MainComponent },
+  { path: 'contacts', component: ContactComponent },
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   declarations: [
@@ -25,12 +33,15 @@ import { GreetingsModalComponent } from './modal/greetings/greetings-modal.compo
     AccordionOfQuestionsComponent,
     IntersectionObserverDirective,
     GreetingsModalComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     NgbAccordionModule,
     BrowserAnimationsModule,
-    RouterLink
+    RouterLink,
+    RouterOutlet,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

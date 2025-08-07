@@ -1,12 +1,14 @@
 <section class="d-flex mb-my"
-         [class.bg-for-form]="isFormForMainPage">
+         [class.bg-for-form]="isFormForMainPage"
+         [class.bg-for-form_contacts]="!isFormForMainPage"
+>
   <div class="container-my d-flex">
-    <div class="form col-8 d-flex flex-column">
+    <div class="form bg-primary-my col-8 d-flex flex-column" [class.col-12]="isForContactPage" [class.bg-light-grey]="isForContactPage">
       <div class="d-flex flex-column justify-content-between">
-        <h3 class="fw-bold text-white">Получить обратную связь</h3>
-        <p class="text-white">Остались вопросы? Заполните заявку для обратной связи и мы свяжемся с вами в течении 15 минут!</p>
+        <h3 class="fw-bold text-white font-old-standard" [class.text-label_contacts]="!isFormForMainPage">Получить обратную связь</h3>
+        <p class="text-white" [class.text-label_contacts]="!isFormForMainPage">Остались вопросы? Заполните заявку для обратной связи и мы свяжемся с вами в течении 15 минут!</p>
       </div>
-      <form class="d-flex flex-column gap-2">
+      <form class="d-flex flex-column gap-2" [class.border-input_contacts]="!isFormForMainPage">
         <div class="d-flex flex-grow-1 gap-2">
           <input type="text"
                  class="form-control"
@@ -38,11 +40,11 @@
                     autocomplete="on"></textarea>
         </div>
       </form>
-      <div class="mt-3">
-        <button class="btn btn-dark b-r-0"> Отправить </button>
+      <div class="mt-3 d-flex" [class.justify-content-center]="!isFormForMainPage">
+        <button class="btn b-r-0" [class.button-my_large]="!isFormForMainPage" [class.btn-dark]="isFormForMainPage"> Отправить </button>
       </div>
     </div>
-    <div class="pic col-4"></div>
+    <div *ngIf="isFormForMainPage" class="pic col-4"></div>
   </div>
 </section>
 

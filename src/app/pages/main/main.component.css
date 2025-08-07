@@ -161,6 +161,7 @@
 /* SECTION 4 LIST OF CARDS BORROWERS,BROKERS,INVESTORS */
 .section-4{
   width: 100%;
+  background-color: white;
 }
 .container-for-section-4-component{
   display: flex;
@@ -216,7 +217,7 @@
 }
 .devider-line-section-4{
   height: 1px;
-  width: 50px;
+  width: calc(100% - 40px);
   background: var(--primary-color);
 }
 @media (max-width: 1100px){

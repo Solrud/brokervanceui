@@ -2,9 +2,12 @@
   background: var(--light-gray);
   background: linear-gradient(180deg, var(--light-gray) 53%, var(--main-color) 53%);
 }
+.bg-for-form_contacts{
+  background: var(--light-gray);
+  background: linear-gradient(0deg, var(--light-gray) 53%, var(--main-color) 53%);
+}
 .form{
   min-height: 400px;
-  background-color: #c39251;
   padding: 50px 70px;
 }
 .pic{
@@ -14,6 +17,15 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.text-label_contacts{
+  color: var(--main-color) !important;
+}
+
+.border-input_contacts div input,
+.border-input_contacts div textarea{
+  border: var(--primary-color) 1px solid !important;
 }
 
 .textarea-my{

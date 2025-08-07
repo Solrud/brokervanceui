@@ -15,6 +15,8 @@ export class ModalOpenService {
   }
 
   openGreetings() {
-    return this.ngbModal.open(GreetingsModalComponent, {backdropClass: 'bg-modal'});
+    const openGreetings = this.ngbModal.open(GreetingsModalComponent, {backdropClass: 'bg-modal'});
+
+    return openGreetings;
   }
 }

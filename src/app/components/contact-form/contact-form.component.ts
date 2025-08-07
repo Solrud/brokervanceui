@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {fakeAsync} from "@angular/core/testing";
 
 @Component({
   selector: 'app-contact-form',
@@ -16,4 +17,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 export class ContactFormComponent {
   @Input()
   isFormForMainPage: boolean = true;
+
+  @Input()
+  isForContactPage: boolean = false;
 }
