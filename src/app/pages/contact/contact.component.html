@@ -11,16 +11,16 @@
 </section>
 
 <section class="w-100">
-  <app-contact-form [isFormForMainPage]="false" [isForContactPage]="true"></app-contact-form>
+  <app-contact-form [isFormForMainPage]="false"></app-contact-form>
 </section>
 
 
 <section class="section-email">
-  <div class="container-my"
+  <div class="container-my "
        appIntersectionObserver
        (visible)="onChangeSectionVisible(9, $event)"
        [@fadeIn]="sectionsVisibleList[9].visible ? 'visible' : 'invisible'">
-    <div class="container-for-section-4-component mb-4">
+    <div class="container-for-section-4-component mb-4 px-4">
       <div class="div-section-4-img s-4-img-2 b-s-eb order-2"></div>
       <div class="div-section-4-text order-1">
         <div class="inner-div-s4-text">

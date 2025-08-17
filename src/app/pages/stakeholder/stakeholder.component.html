@@ -1,0 +1,47 @@
+<section class="section-3" id="main">
+  <div class="container-my container-section-3">
+    <div class="div-pic-section-3 bg-for-section-img"
+         [class.bg-img-investors-1]="stakeHolderType === StakeholderTypeEnum.INVESTOR"></div>
+    <div class="outer-container-for-text-section-3">
+      <div class="container-for-text-section-3 w-100">
+        <ng-container [ngSwitch]="stakeHolderType">
+            <h1 *ngSwitchCase="StakeholderTypeEnum.INVESTOR" class="label-3 font-old-standard">Инвесторам</h1>
+        </ng-container>
+        <ng-container [ngSwitch]="stakeHolderType">
+          <span class="text-3" *ngSwitchCase="StakeholderTypeEnum.INVESTOR">
+            Мы заботимся о том, чтобы ваши инвестиции оставались активными и приносили прибыль при различных сроках кредитования, типах и размерах займов.
+            Мы разрабатываем индивидуальные стратегии, чтобы сбалансировать доходность и риски и соответствовать вашим ожиданиям по доходности.
+          </span>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-4">
+  <div class="container-my py-5">
+    <div id="forBorrowers" class="container-for-section-4-component mb-4">
+      <div class="div-section-4-img b-s-sb"
+           [class.s-4-img-investors]="stakeHolderType === StakeholderTypeEnum.INVESTOR"></div>
+      <div class="div-section-4-text">
+        <div class="inner-div-s4-text">
+          <h2 class="fw-bold font-old-standard label-3 text-black">Что мы предлагаем</h2>
+          <div class="devider-line-section-4 mb-3"></div>
+          <ng-container [ngSwitch]="stakeHolderType">
+            <div *ngSwitchCase="StakeholderTypeEnum.INVESTOR" class="d-flex flex-column">
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Прямое финансирование из частных семейных офисов, исключающее дополнительные комиссии и ограничения по гибкости</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Высокая доходность за счет сочетания факторов риска</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Уникальное отраслевое предложение: Вы сами выбираете, куда направить свои деньги</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Разнообразные варианты инвестирования для большей безопасности</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Сотрудничайте со своими финансовыми консультантами, чтобы получить практический опыт</span>
+            </div>
+
+          </ng-container>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

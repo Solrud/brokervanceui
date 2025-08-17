@@ -17,7 +17,4 @@ import {fakeAsync} from "@angular/core/testing";
 export class ContactFormComponent {
   @Input()
   isFormForMainPage: boolean = true;
-
-  @Input()
-  isForContactPage: boolean = false;
 }

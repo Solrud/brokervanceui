@@ -5,10 +5,10 @@
       <div class="label-text-svg"></div>
     </div>
     <div class="d-flex gap-4 align-items-center menu-list">
-      <span class="pointer" (click)="scrollToSection('forBorrowers')">Заемщикам</span>
-      <span class="pointer" (click)="scrollToSection('forBrokers')">Брокерам</span>
-      <span class="pointer" (click)="scrollToSection('forInvestors')">Инвесторам</span>
-      <span class="pointer" [routerLink]="['/contacts']">Контакты</span>
+      <span class="pointer" [routerLink]="['borrowers']">Заемщикам</span>
+      <span class="pointer" [routerLink]="['brokers']" >Брокерам</span>
+      <span class="pointer" [routerLink]="['investors']" >Инвесторам</span>
+      <span class="pointer" [routerLink]="['contacts']">Контакты</span>
       <a type="button" class="btn button-outline-my" href="https://mattheweb.ru/brokervance" target="_blank">
         Обратиться
       </a>

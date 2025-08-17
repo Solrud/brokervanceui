@@ -2,10 +2,10 @@
 <div class="d-flex flex-column align-items-center p-container gap-4">
   <div class="logo-svg" [routerLink]="['']" (click)="activeOffcanvas.close()"></div>
   <div class="label-text-svg" [routerLink]="['']" (click)="activeOffcanvas.close()"></div>
-  <span>Заемщикам</span>
-  <span>Брокерам</span>
-  <span>Инвесторам</span>
-  <span [routerLink]="['/contacts']" (click)="activeOffcanvas.close()">Контакты</span>
+  <span [routerLink]="['borrowers']" (click)="activeOffcanvas.close()">Заемщикам</span>
+  <span [routerLink]="['brokers']" (click)="activeOffcanvas.close()">Брокерам</span>
+  <span [routerLink]="['investors']" (click)="activeOffcanvas.close()">Инвесторам</span>
+  <span [routerLink]="['contacts']" (click)="activeOffcanvas.close()">Контакты</span>
   <div>
     <button class="btn button-outline-my apply-btn fs-5 ">Связаться</button>
   </div>

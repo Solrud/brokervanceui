@@ -1,0 +1,178 @@
+/* SECTION 3 HALF PICTURE AND GOAL */
+.section-3{
+  margin-top: -1px;
+  width: 100%;
+  background: var(--white-permanent-color);
+  background: linear-gradient(0deg, var(--white-permanent-color) 90px, var(--main-color) 90px);
+}
+.div-pic-section-3{
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(var(--container-width)/2);
+}
+.outer-container-for-text-section-3{
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(var(--container-width)/2);
+  background: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+}
+.container-section-3{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.container-for-text-section-3{
+  padding: 55px 40px;
+}
+.bg-for-section-img{
+  background-color: var(--main-color);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-img-investors-1{
+  background-image: url("src/assets/imgs/photos-preview/investors/man_laptop.jpg");
+}
+.label-3{
+  color: white;
+  margin-bottom: 10px;
+}
+.text-3{
+  color: white;
+  font-size: 15px;
+}
+@media (max-width: 1050px) {
+  .container-section-3{
+    margin-top: 60px;
+    padding: 0 2rem;
+  }
+  .div-pic-section-3{
+    height: 50vh;
+  }
+  .container-for-text-section-3{
+    padding: 40px 30px;
+  }
+  .label-3{
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .text-3{
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 600px) {
+  .s-3-label{
+    font-size: 16px !important;
+  }
+  .container-section-3{
+    flex-direction: column;
+  }
+  .div-pic-section-3{
+    height: 30vh;
+    flex-basis: 300px;
+  }
+  .outer-container-for-text-section-3{
+    flex-basis: 200px;
+  }
+}
+/* SECTION 3 HALF PICTURE AND GOAL */
+/* SECTION 4 LIST OF CARDS BORROWERS,BROKERS,INVESTORS */
+.section-4{
+  width: 100%;
+  background-color: white;
+  margin-top: -1px;
+}
+.container-for-section-4-component{
+  display: flex;
+  min-height: 400px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.div-section-4-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.inner-div-s4-text{
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-section-4-img{
+  background-color: var(--main-color);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.s-4-img-investors{
+  background-image: url("src/assets/imgs/photos-preview/investors/house_architect.jpg");
+}
+
+.b-s-eb{
+  -webkit-box-shadow: 12px 10px 0px 0px var(--primary-color);
+  -moz-box-shadow: 12px 10px 0px 0px var(--primary-color);
+  box-shadow: 12px 10px 0px 0px var(--primary-color);
+}
+.b-s-sb{
+  -webkit-box-shadow: -12px 10px 0px 0px var(--primary-color);
+  -moz-box-shadow: -12px 10px 0px 0px var(--primary-color);
+  box-shadow: -12px 10px 0px 0px var(--primary-color);
+}
+.devider-line-section-4{
+  height: 1px;
+  width: calc(20%);
+  background: var(--primary-color);
+}
+.text-checks-4{
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+@media (max-width: 1100px){
+  .container-for-section-4-component{
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  .div-section-4-img{
+    height: 320px;
+    width: calc(100% - 12px);
+    margin-bottom: 3rem;
+  }
+  .div-section-4-text{
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .inner-div-s4-text{
+    padding: 0 !important;
+  }
+  .text-checks-4{
+    font-size: 16px;
+  }
+}
+@media (max-width: 550px){
+  .container-for-section-4-component{
+    padding: 0 2rem;
+  }
+
+  .b-s-eb{
+    order: 0 !important;
+    margin-right: 12px !important;
+  }
+  .b-s-sb{
+    margin-left: 12px !important;
+    /*margin-right: 13px !important;*/
+  }
+}

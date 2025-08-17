@@ -3,7 +3,7 @@
          [class.bg-for-form_contacts]="!isFormForMainPage"
 >
   <div class="container-my d-flex">
-    <div class="form bg-primary-my col-8 d-flex flex-column" [class.col-12]="isForContactPage" [class.bg-light-grey]="isForContactPage">
+    <div class="form bg-primary-my col-8 d-flex flex-column" [class.col-12]="!isFormForMainPage" [class.bg-light-grey]="!isFormForMainPage">
       <div class="d-flex flex-column justify-content-between">
         <h3 class="fw-bold text-white font-old-standard" [class.text-label_contacts]="!isFormForMainPage">Получить обратную связь</h3>
         <p class="text-white" [class.text-label_contacts]="!isFormForMainPage">Остались вопросы? Заполните заявку для обратной связи и мы свяжемся с вами в течении 15 минут!</p>

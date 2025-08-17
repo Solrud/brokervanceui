@@ -14,10 +14,15 @@ import { IntersectionObserverDirective } from './shared/intersection-fade/inters
 import {RouterLink, RouterModule, RouterOutlet, Routes} from "@angular/router";
 import { GreetingsModalComponent } from './modal/greetings/greetings-modal.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { StakeholderComponent } from './pages/stakeholder/stakeholder.component';
+import {StakeholderTypeEnum} from "./shared/routing/stakeholder-type.enum";
 
 
 const routes: Routes = [
   { path: '', component: MainComponent },
+  { path: 'borrowers', component: StakeholderComponent, data: {staker: StakeholderTypeEnum.BORROWER}},
+  { path: 'brokers', component: StakeholderComponent, data: {staker: StakeholderTypeEnum.BROKER}},
+  { path: 'investors', component: StakeholderComponent, data: {staker: StakeholderTypeEnum.INVESTOR}},
   { path: 'contacts', component: ContactComponent },
   { path: '**', redirectTo: '' }
 ];
@@ -34,6 +39,7 @@ const routes: Routes = [
     IntersectionObserverDirective,
     GreetingsModalComponent,
     ContactComponent,
+    StakeholderComponent,
   ],
   imports: [
     BrowserModule,
