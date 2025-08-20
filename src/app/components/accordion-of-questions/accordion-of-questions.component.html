@@ -1,11 +1,11 @@
 <div ngbAccordion>
   <div ngbAccordionItem class="b-r-0">
     <h2 ngbAccordionHeader>
-      <button ngbAccordionButton>{{question}}</button>
+      <button ngbAccordionButton><span class="label-accord">{{question}}</span></button>
     </h2>
     <div ngbAccordionCollapse>
       <div ngbAccordionBody>
-        <ng-container *ngIf="answerString">{{answerString}}</ng-container>
+        <ng-container *ngIf="answerString"><span class="text-accord">{{answerString}}</span></ng-container>
         <ng-template *ngIf="answerTemplateRef" [ngTemplateOutlet]="answerTemplateRef"></ng-template>
       </div>
     </div>

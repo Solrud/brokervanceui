@@ -1,3 +1,14 @@
+/* GLOBAL */
+
+.fs-14-16-text-adapt{
+  font-size: 14px;
+}
+@media (max-width: 1100px){
+  .fs-14-16-text-adapt{
+    font-size: 16px;
+  }
+}
+
 /* SECTION 1 WELCOME TEXT AND BIG PICTURE */
 .section-1{
   min-height: 200px;
@@ -298,9 +309,10 @@
 @media (max-width: 760px) {
   .label-section-5{
     text-align: center;
+    padding-bottom: 1rem;
   }
   .container-card-section-5{
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 2rem;
   }
   .section-5-test-pic{

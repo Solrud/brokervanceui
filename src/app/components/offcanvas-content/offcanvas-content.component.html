@@ -7,6 +7,8 @@
   <span [routerLink]="['investors']" (click)="activeOffcanvas.close()">Инвесторам</span>
   <span [routerLink]="['contacts']" (click)="activeOffcanvas.close()">Контакты</span>
   <div>
-    <button class="btn button-outline-my apply-btn fs-5 ">Связаться</button>
+    <button class="btn button-outline-my apply-btn fs-5"
+            [routerLink]="['contacts']"
+            (click)="activeOffcanvas.close()">Связаться</button>
   </div>
 </div>

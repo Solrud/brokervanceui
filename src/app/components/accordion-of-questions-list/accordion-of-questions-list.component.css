@@ -1,0 +1,24 @@
+.container-accordion{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 760px){
+  .container-accordion{
+    padding: 0 1.5rem;
+  }
+}
+.bg-accordion-of-questions{
+  padding: 70px 0 70px 0;
+  background: var(--light-gray);
+}
+.text-accord{
+  font-size: 14px;
+}
+
+@media (max-width: 1000px){
+  .text-accord{
+    font-size: 16px !important;
+  }
+}

@@ -1,0 +1,25 @@
+<section class="w-100 bg-accordion-of-questions ">
+  <div class="container-my container-accordion">
+    <h3 class="text-center fw-bold mb-3 font-old-standard">Часто задаваемые вопросы</h3>
+    <ng-template #answer1>
+      <span class="text-accord">Сайт написан Frontend разработчиком Ильиным Матвеем. Сайт портфолио разработчика:
+      <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a></span>
+    </ng-template>
+    <app-accordion-of-questions [question]="'Кто сделал этот сайт?'" [answerTemplateRef]="answer1"></app-accordion-of-questions>
+    <ng-template #answer2>
+      <span class="text-accord">Telegram: <a href="https://t.me/rudalsmolyusr" target="_blank">@rudalsmolyusr</a>
+        Также на сайте разработчика есть все контакты, либо можно оставить свои: <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a></span></ng-template>
+    <app-accordion-of-questions [question]="'Как связаться с разработчиком этого сайта?'" [answerTemplateRef]="answer2"></app-accordion-of-questions>
+    <app-accordion-of-questions [question]="'На чем именно написан сайт?'"
+                                [answerString]="'Сайт написан с помощью фреймворка Angular v.16, на языке TypeScript, верстка на HTML, стили на CSS'"></app-accordion-of-questions>
+    <ng-template #answer4>
+      <span class="text-accord">Нет, этот сайт является демонстрационным лендингом, созданным в рамках портфолио разработчика.
+        Его функционал ограничен и не предназначен для коммерческого использования.</span></ng-template>
+    <app-accordion-of-questions [question]="'Работоспособен ли этот сайт?'" [answerTemplateRef]="answer4"></app-accordion-of-questions>
+    <ng-template #answer5>
+      <span class="text-accord">Конечно! Свяжитесь с разработчиком по ссылке
+      <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a>
+        — для вас будет создан современный и качественный сайт с учетом ваших пожеланий.</span></ng-template>
+    <app-accordion-of-questions [question]="'Могу ли я сделать свой собственный сайт?'" [answerTemplateRef]="answer5"></app-accordion-of-questions>
+  </div>
+</section>

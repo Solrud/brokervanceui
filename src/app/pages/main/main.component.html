@@ -6,10 +6,10 @@
          [@fadeIn]="sectionsVisibleList[0].visible ? 'visible' : 'invisible'">
       <h1 class="fw-bold mb-4 main-label-s1 font-old-standard fw-bolder">Brokervance — ваш надежный партнер в финансах, инвестициях и партнерских возможностях.</h1>
       <div class="container-for-checks-s1">
-        <p><i class="bi bi-check2-square"></i> Одобрение возможно в течение 24 часов, а погашение - в течение 3 рабочих дней</p>
-        <p><i class="bi bi-check2-square"></i> Займы на сумму до 8 миллионов долларов напрямую у кредиторов – без участия банков и их бюрократических проволочек</p>
-        <p><i class="bi bi-check2-square"></i> Прозрачные контракты и затраты </p>
-        <p><i class="bi bi-check2-square"></i> Срочные соглашения</p>
+        <p  class="fs-14-16-text-adapt"><i class="bi bi-check2-square"></i> Одобрение возможно в течение 24 часов, а погашение - в течение 3 рабочих дней</p>
+        <p class="fs-14-16-text-adapt"><i class="bi bi-check2-square"></i> Займы на сумму до 8 миллионов долларов напрямую у кредиторов – без участия банков и их бюрократических проволочек</p>
+        <p class="fs-14-16-text-adapt"><i class="bi bi-check2-square"></i> Прозрачные контракты и затраты </p>
+        <p class="fs-14-16-text-adapt"><i class="bi bi-check2-square"></i> Срочные соглашения</p>
         <div>
           <a type="button" class="btn button-my_large mt-2" href="https://mattheweb.ru/brokervance" target="_blank">Связаться с разработчиком сайта!</a>
         </div>
@@ -28,8 +28,8 @@
        (visible)="onChangeSectionVisible(1, $event)"
        [@fadeIn]="sectionsVisibleList[1].visible ? 'visible' : 'invisible'">
     <h1 class="label-section-2 font-old-standard">Мы обеспечиваем быстрое согласование и финансовые решения для ваших клиентов</h1>
-    <p class="text-for-label-section-2">Заполнив эту форму, мы предлагаем скидку на оплату за открытие счета и предоставляем брокерские бонусы при окончательном расчете.</p>
-    <button class="btn b-r-0 text-white bg-primary-my mb-4">Заполнить анкету</button>
+    <p class="text-for-label-section-2  fs-14-16-text-adapt">Заполнив эту форму, мы предлагаем скидку на оплату за открытие счета и предоставляем брокерские бонусы при окончательном расчете.</p>
+    <button [routerLink]="['/contacts']" class="btn b-r-0 text-white bg-primary-my mb-4">Заполнить анкету</button>
   </div>
 </section>
 
@@ -66,7 +66,7 @@
           <div class="inner-div-s4-text">
             <h3 class="fw-bold">Заемщикам</h3>
             <div class="devider-line-section-4 mb-3"></div>
-            <span class="mb-3">Получите быстрый и прозрачный доступ к финансированию на выгодных условиях. Оценим заявку онлайн и поможем найти оптимальное решение под ваши задачи.</span>
+            <span class="mb-3 fs-14-16-text-adapt">Получите быстрый и прозрачный доступ к финансированию на выгодных условиях. Оценим заявку онлайн и поможем найти оптимальное решение под ваши задачи.</span>
             <div>
               <button class="btn button-outline-my">Узнать больше</button>
             </div>
@@ -85,7 +85,7 @@
           <div class="inner-div-s4-text">
             <h3 class="fw-bold">Брокерам</h3>
             <div class="devider-line-section-4 mb-3"></div>
-            <span class="mb-3">Поможем расширить возможности для ваших клиентов и увеличить доход. Надежное сервисное сопровождение и гибкие партнерские условия для вашего роста.</span>
+            <span class="mb-3 fs-14-16-text-adapt">Поможем расширить возможности для ваших клиентов и увеличить доход. Надежное сервисное сопровождение и гибкие партнерские условия для вашего роста.</span>
             <div>
               <button class="btn button-outline-my">Узнать больше</button>
             </div>
@@ -104,7 +104,7 @@
           <div class="inner-div-s4-text">
             <h3 class="fw-bold">Инвесторам</h3>
             <div class="devider-line-section-4 mb-3"></div>
-            <span class="mb-3">Инвестируйте в перспективные проекты и получайте стабильный доход с минимальными рисками. Открытые условия и профессиональная экспертиза на каждом этапе сотрудничества.</span>
+            <span class="mb-3 fs-14-16-text-adapt">Инвестируйте в перспективные проекты и получайте стабильный доход с минимальными рисками. Открытые условия и профессиональная экспертиза на каждом этапе сотрудничества.</span>
             <div>
               <button class="btn button-outline-my">Узнать больше</button>
             </div>
@@ -129,7 +129,7 @@
           </div>
           <div class="section-5-text">
             <h3 class="fw-medium">Индивидуальный подход</h3>
-            <p>Учитываем ваши цели и подбираем оптимальные решения для каждого клиента.</p>
+            <p class="fs-14-16-text-adapt">Учитываем ваши цели и подбираем оптимальные решения для каждого клиента.</p>
           </div>
         </div>
         <div class="card-section-5">
@@ -138,7 +138,7 @@
           </div>
           <div class="section-5-text">
             <h3 class="fw-medium">Прозрачность</h3>
-            <p>Все условия и процессы работы полностью открыты и понятны с первого шага.</p>
+            <p class="fs-14-16-text-adapt">Все условия и процессы работы полностью открыты и понятны с первого шага.</p>
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@
           </div>
           <div class="section-5-text">
             <h3 class="fw-medium">Оперативность</h3>
-            <p>Быстро реагируем на ваши запросы и принимаем решения в кратчайшие сроки.</p>
+            <p class="fs-14-16-text-adapt">Быстро реагируем на ваши запросы и принимаем решения в кратчайшие сроки.</p>
           </div>
         </div>
         <div class="card-section-5">
@@ -158,7 +158,7 @@
           </div>
           <div class="section-5-text">
             <h3 class="fw-medium">Надежность</h3>
-            <p>Гарантируем профессиональное сопровождение и безопасность каждой сделки.</p>
+            <p class="fs-14-16-text-adapt">Гарантируем профессиональное сопровождение и безопасность каждой сделки.</p>
           </div>
         </div>
       </div>
@@ -166,30 +166,7 @@
   </div>
 </section>
 
-<section class="w-100 bg-accordion-of-questions "
-         appIntersectionObserver
-         (visible)="onChangeSectionVisible(5, $event)"
-         [@fadeIn]="sectionsVisibleList[5].visible ? 'visible' : 'invisible'">
-  <div class="container-my container-accordion">
-    <h3 class="text-center fw-bold mb-3 font-old-standard">Часто задаваемые вопросы</h3>
-    <ng-template #answer1>Сайт написан Frontend разработчиком Ильиным Матвеем. Сайт портфолио разработчика:
-      <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a>
-    </ng-template>
-    <app-accordion-of-questions [question]="'Кто сделал этот сайт?'" [answerTemplateRef]="answer1"></app-accordion-of-questions>
-    <ng-template #answer2>Telegram: <a href="https://t.me/rudalsmolyusr" target="_blank">@rudalsmolyusr</a>
-      Также на сайте разработчика есть все контакты, либо можно оставить свои: <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a></ng-template>
-    <app-accordion-of-questions [question]="'Как связаться с разработчиком этого сайта?'" [answerTemplateRef]="answer2"></app-accordion-of-questions>
-    <app-accordion-of-questions [question]="'На чем именно написан сайт?'"
-                                [answerString]="'Сайт написан с помощью фреймворка Angular v.16, на языке TypeScript, верстка на HTML, стили на CSS'"></app-accordion-of-questions>
-    <ng-template #answer4>Нет, этот сайт является демонстрационным лендингом, созданным в рамках портфолио разработчика.
-      Его функционал ограничен и не предназначен для коммерческого использования.</ng-template>
-    <app-accordion-of-questions [question]="'Работоспособен ли этот сайт?'" [answerTemplateRef]="answer4"></app-accordion-of-questions>
-    <ng-template #answer5>Конечно! Свяжитесь с разработчиком по ссылке
-      <a href="https://mattheweb.ru/brokervance" target="_blank">mattheweb.ru</a>
-      — для вас будет создан современный и качественный сайт с учетом ваших пожеланий.</ng-template>
-    <app-accordion-of-questions [question]="'Могу ли я сделать свой собственный сайт?'" [answerTemplateRef]="answer5"></app-accordion-of-questions>
-  </div>
-</section>
+<app-accordion-of-questions-list></app-accordion-of-questions-list>
 
 <section class="w-100">
     <app-contact-form [isFormForMainPage]="true"></app-contact-form>

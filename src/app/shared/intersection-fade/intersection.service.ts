@@ -15,6 +15,11 @@ export class IntersectionService {
   onChangeSectionVisible(index: number, isVisible: IIntersection["visible"]) {
     this.sectionsVisibleList[index].visible = isVisible;
   }
+
+  setVisibleToList(numList: number[]): void {
+    numList.forEach(n => this.sectionsVisibleList[n].visible = false);
+    this.sectionsVisibleList = [...this.sectionsVisibleList]
+  }
 }
 
 export interface IIntersection{

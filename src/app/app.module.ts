@@ -16,6 +16,7 @@ import { GreetingsModalComponent } from './modal/greetings/greetings-modal.compo
 import { ContactComponent } from './pages/contact/contact.component';
 import { StakeholderComponent } from './pages/stakeholder/stakeholder.component';
 import {StakeholderTypeEnum} from "./shared/routing/stakeholder-type.enum";
+import { AccordionOfQuestionsListComponent } from './components/accordion-of-questions-list/accordion-of-questions-list.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,7 @@ const routes: Routes = [
     GreetingsModalComponent,
     ContactComponent,
     StakeholderComponent,
+    AccordionOfQuestionsListComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     RouterLink,
     RouterOutlet,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})
   ],
   providers: [],
   bootstrap: [AppComponent]

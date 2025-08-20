@@ -1,2 +1,19 @@
+.label-accord{
+  font-size: 15px !important;
+  font-weight: 600;
+}
 
+@media (max-width: 1000px){
+  .label-accord{
+    font-size: 16px !important;
+  }
+}
+.text-accord{
+  font-size: 14px !important;
+}
 
+@media (max-width: 1000px){
+  .text-accord{
+    font-size: 16px !important;
+  }
+}

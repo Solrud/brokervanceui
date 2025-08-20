@@ -1,16 +1,32 @@
 <section class="section-3" id="main">
   <div class="container-my container-section-3">
     <div class="div-pic-section-3 bg-for-section-img"
-         [class.bg-img-investors-1]="stakeHolderType === StakeholderTypeEnum.INVESTOR"></div>
+         [class.bg-img-borrowers-1]="stakeHolderType === StakeholderTypeEnum.BORROWER"
+         [class.bg-img-investors-1]="stakeHolderType === StakeholderTypeEnum.INVESTOR"
+         [class.bg-img-brokers-1]="stakeHolderType === StakeholderTypeEnum.BROKER"></div>
     <div class="outer-container-for-text-section-3">
-      <div class="container-for-text-section-3 w-100">
+      <div class="container-for-text-section-3 w-100"
+           appIntersectionObserver
+           (visible)="onChangeSectionVisible(13, $event)"
+           [@fadeIn]="sectionsVisibleList[13].visible ? 'visible' : 'invisible'">
         <ng-container [ngSwitch]="stakeHolderType">
+            <h1 *ngSwitchCase="StakeholderTypeEnum.BORROWER" class="label-3 font-old-standard">Заемщикам</h1>
             <h1 *ngSwitchCase="StakeholderTypeEnum.INVESTOR" class="label-3 font-old-standard">Инвесторам</h1>
+            <h1 *ngSwitchCase="StakeholderTypeEnum.BROKER" class="label-3 font-old-standard">Брокерам</h1>
         </ng-container>
         <ng-container [ngSwitch]="stakeHolderType">
+                    <span class="text-3" *ngSwitchCase="StakeholderTypeEnum.BORROWER">
+            Мы являемся экспертами в предоставлении быстрого и гибкого ипотечного финансирования. Независимо от того, является ли это вашей первой или второй ипотекой,
+                      мы всегда готовы помочь. Наши услуги доступны по всей России и Европе без ограничений по стоимости недвижимости.
+          </span>
           <span class="text-3" *ngSwitchCase="StakeholderTypeEnum.INVESTOR">
             Мы заботимся о том, чтобы ваши инвестиции оставались активными и приносили прибыль при различных сроках кредитования, типах и размерах займов.
             Мы разрабатываем индивидуальные стратегии, чтобы сбалансировать доходность и риски и соответствовать вашим ожиданиям по доходности.
+          </span>
+          <span class="text-3" *ngSwitchCase="StakeholderTypeEnum.BROKER">
+            Brokervance предлагает брокерам оперативное взаимодействие в зависимости от финансовых потребностей их клиентов.
+            В зависимости от срока кредита, мы предоставляем большие брокерские
+            комиссионные за подключение клиентов к нашим специализированным услугам.
           </span>
         </ng-container>
       </div>
@@ -19,15 +35,28 @@
 </section>
 
 <section class="section-4">
-  <div class="container-my py-5">
-    <div id="forBorrowers" class="container-for-section-4-component mb-4">
+  <div class="container-my pt-5 pb-5"
+       appIntersectionObserver
+       (visible)="onChangeSectionVisible(14, $event)"
+       [@fadeIn]="sectionsVisibleList[14].visible ? 'visible' : 'invisible'">
+    <div class="container-for-section-4-component mb-4">
       <div class="div-section-4-img b-s-sb"
-           [class.s-4-img-investors]="stakeHolderType === StakeholderTypeEnum.INVESTOR"></div>
+           [class.s-4-img-borrowers]="stakeHolderType === StakeholderTypeEnum.BORROWER"
+           [class.s-4-img-investors]="stakeHolderType === StakeholderTypeEnum.INVESTOR"
+           [class.s-4-img-brokers]="stakeHolderType === StakeholderTypeEnum.BROKER"></div>
       <div class="div-section-4-text">
         <div class="inner-div-s4-text">
           <h2 class="fw-bold font-old-standard label-3 text-black">Что мы предлагаем</h2>
           <div class="devider-line-section-4 mb-3"></div>
           <ng-container [ngSwitch]="stakeHolderType">
+            <div *ngSwitchCase="StakeholderTypeEnum.BORROWER" class="d-flex flex-column">
+              <span class="text-checks-4 fw-bold fs-6"> Финансирование всех видов недвижимости:</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Жилые дома в регионах</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Свободные земельные участки или участки под застройку</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Складскую или коммерческую недвижимость в столице</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Квартиры / паи / таунхаусы</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Отдельно стоящие дома по всей стране</span>
+            </div>
             <div *ngSwitchCase="StakeholderTypeEnum.INVESTOR" class="d-flex flex-column">
               <span class="text-checks-4"><i class="bi bi-check2-square"></i> Прямое финансирование из частных семейных офисов, исключающее дополнительные комиссии и ограничения по гибкости</span>
               <span class="text-checks-4"><i class="bi bi-check2-square"></i> Высокая доходность за счет сочетания факторов риска</span>
@@ -35,13 +64,56 @@
               <span class="text-checks-4"><i class="bi bi-check2-square"></i> Разнообразные варианты инвестирования для большей безопасности</span>
               <span class="text-checks-4"><i class="bi bi-check2-square"></i> Сотрудничайте со своими финансовыми консультантами, чтобы получить практический опыт</span>
             </div>
+            <div *ngSwitchCase="StakeholderTypeEnum.BROKER" class="d-flex flex-column">
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Быстрый доступ к капиталу, возможно, всего за три рабочих дня</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Среднее время расчета: семь рабочих дней</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Специальная поддержка, в том числе в нерабочее время</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Сумма кредита от 500 000 до 30 000 000 рублей</span>
+              <span class="text-checks-4"><i class="bi bi-check2-square"></i> Индивидуальные решения для особых случаев с полной и прозрачной информацией</span>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="stakeHolderType === StakeholderTypeEnum.INVESTOR" class="container-my pt-1 pb-5">
+    <div class="container-for-section-4-component mb-4"
+         appIntersectionObserver
+         (visible)="onChangeSectionVisible(15, $event)"
+         [@fadeIn]="sectionsVisibleList[15].visible ? 'visible' : 'invisible'">
+      <div class="div-section-4-text second-4-text">
+        <div class="inner-div-s4-text">
+          <h2 class="fw-bold font-old-standard label-3 text-black">Вовлеченность</h2>
+          <div class="devider-line-section-4 mb-3"></div>
+          <ng-container [ngSwitch]="stakeHolderType">
+            <div *ngSwitchCase="StakeholderTypeEnum.INVESTOR" class="d-flex flex-column">
+              <span class="text-checks-4-2">Brokervance является лидером отрасли в предоставлении краткосрочного
+                финансирования по первой и второй ипотеке клиентам, которым требуются оперативные расчеты и гибкость.</span>
+            </div>
 
           </ng-container>
 
         </div>
       </div>
+      <div class="div-section-4-img second-4-img b-s-sb"
+           [class.s-4-2-img-investors]="stakeHolderType === StakeholderTypeEnum.INVESTOR"></div>
     </div>
   </div>
 </section>
 
+<section *ngIf="stakeHolderType !== StakeholderTypeEnum.INVESTOR" class="section-2" id="label">
+  <div class="container-my container-section-2"
+       appIntersectionObserver
+       (visible)="onChangeSectionVisible(16, $event)"
+       [@fadeIn]="sectionsVisibleList[16].visible ? 'visible' : 'invisible'">
+    <h1 class="label-section-2 font-old-standard">Мы обеспечиваем быстрое согласование и финансовые решения для ваших клиентов</h1>
+    <p class="text-for-label-section-2">Заполнив эту форму, мы предлагаем скидку на оплату за открытие счета и предоставляем брокерские бонусы при окончательном расчете.</p>
+    <button [routerLink]="['contacts']" class="btn b-r-0 text-white bg-primary-my mb-4">Заполнить анкету</button>
+  </div>
+</section>
 
+<app-accordion-of-questions-list>
+
+<section class="w-100">
+  <app-contact-form [isFormForMainPage]="true"></app-contact-form>
+</section>

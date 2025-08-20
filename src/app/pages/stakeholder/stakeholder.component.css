@@ -37,6 +37,12 @@
 .bg-img-investors-1{
   background-image: url("src/assets/imgs/photos-preview/investors/man_laptop.jpg");
 }
+.bg-img-brokers-1{
+  background-image: url("src/assets/imgs/photos-preview/brokers/woman-laptop.jpg");
+}
+.bg-img-borrowers-1{
+  background-image: url("src/assets/imgs/photos-preview/borrowers/couple_laptop.jpg");
+}
 .label-3{
   color: white;
   margin-bottom: 10px;
@@ -121,6 +127,15 @@
 .s-4-img-investors{
   background-image: url("src/assets/imgs/photos-preview/investors/house_architect.jpg");
 }
+.s-4-2-img-investors{
+  background-image: url("src/assets/imgs/photos-preview/investors/woman_laptop.jpg");
+}
+.s-4-img-brokers{
+  background-image: url("src/assets/imgs/photos-preview/brokers/houses.jpg");
+}
+.s-4-img-borrowers{
+  background-image: url("src/assets/imgs/photos-preview/borrowers/house_architect.jpg");
+}
 
 .b-s-eb{
   -webkit-box-shadow: 12px 10px 0px 0px var(--primary-color);
@@ -139,7 +154,17 @@
 }
 .text-checks-4{
   font-size: 13px;
+  margin-bottom: 8px;
+}
+.text-checks-4-2{
+  font-size: 15px;
   margin-bottom: 5px;
+}
+.second-4-text{
+  order: 1 !important;
+}
+.second-4-img{
+  order: 2 !important;
 }
 @media (max-width: 1100px){
   .container-for-section-4-component{
@@ -158,8 +183,17 @@
   .inner-div-s4-text{
     padding: 0 !important;
   }
+  .text-checks-4-2{
+    font-size: 16px;
+  }
   .text-checks-4{
     font-size: 16px;
+  }
+  .second-4-text{
+    order: 2 !important;
+  }
+  .second-4-img{
+    order: 1 !important;
   }
 }
 @media (max-width: 550px){
@@ -176,3 +210,61 @@
     /*margin-right: 13px !important;*/
   }
 }
+
+
+.container-accordion{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 760px){
+  .container-accordion{
+    padding: 0 1.5rem;
+  }
+}
+.bg-accordion-of-questions{
+  padding: 70px 0 70px 0;
+  background: var(--light-gray);
+}
+.text-accord{
+  font-size: 14px;
+}
+
+@media (max-width: 1000px){
+  .text-accord{
+    font-size: 16px !important;
+  }
+}
+
+
+/* SECTION 2 BIG LABEL AND TEXT WITH BUTTON APPLY */
+.section-2{
+  width: 100%;
+  background: var(--main-color);
+}
+.container-section-2{
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  color: var(--white-color);
+  text-align:center!important
+}
+.label-section-2{
+  color: var(--white-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.text-for-label-section-2{
+  color: var(--white-color);
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 760px) {
+  .container-section-2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .label-section-2{
+    /*font-size: 26px;*/
+  }
+}
+/* SECTION 2 BIG LABEL AND TEXT WITH BUTTON APPLY */
